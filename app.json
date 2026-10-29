@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "AROCDM",
+    "slug": "arocdm",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.vitorvendrame.arocdm",
+      "infoPlist": {
+        "NSCameraUsageDescription": "O AROCDM usa a câmera para reconhecer objetos em tempo real."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "com.vitorvendrame.arocdm",
+      "permissions": [
+        "android.permission.CAMERA"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "output": "single"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "O AROCDM usa a câmera para reconhecer objetos em tempo real."
+        }
+      ]
+    ],
+    "scheme": "arocdm"
+  }
+}
